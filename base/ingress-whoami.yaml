@@ -1,0 +1,18 @@
+# whoami-ingressroute.yaml
+apiVersion: traefik.io/v1alpha1
+kind: IngressRoute
+metadata:
+  name: whoami
+  namespace: sampleapp
+spec:
+  entryPoints:
+    - web
+    - websecure
+  routes:
+    - match: Host(`CHANGEME`)
+      kind: Rule
+      services:
+        - name: whoami
+          port: 80
+  tls:
+    certResolver: myresolver

@@ -1,0 +1,13 @@
+# whoami-ingressroute.yaml
+apiVersion: traefik.io/v1alpha1
+kind: IngressRoute
+metadata:
+  name: whoami
+  namespace: sampleapp
+spec:
+  routes:
+    - match: Host(`stream-prd-whoami.apps.glop.pasglop`)
+      kind: Rule
+      services:
+        - name: whoami
+          port: 80
