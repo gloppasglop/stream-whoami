@@ -4,6 +4,7 @@ kind: Kustomization
 namespace: CHANGEME
 
 resources:
+  - namespace.yaml
   - deployment-whoami.yaml
   - service-whoami.yaml
   - ingress-whoami.yaml

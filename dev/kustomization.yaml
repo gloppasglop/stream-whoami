@@ -7,5 +7,6 @@ resources:
   - ../base/
 
 patches:
+  - path: namespace.yaml
   - path: deployment-whoami.yaml
   - path: ingress-whoami.yaml

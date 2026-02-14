@@ -4,5 +4,5 @@ metadata:
   annotations:
   labels:
     glop.pasglop.environment: PRD
-  name: stream-prd-whoami
+  name: CHANGEME
 spec:

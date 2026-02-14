@@ -3,6 +3,6 @@ kind: Namespace
 metadata:
   annotations:
   labels:
-    glop.pasglop.environment: uat
-  name: uat
+    glop.pasglop.environment: UAT
+  name: CHANGEME
 spec:
