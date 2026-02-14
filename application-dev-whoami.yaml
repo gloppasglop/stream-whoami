@@ -1,0 +1,16 @@
+apiVersion: argoproj.io/v1alpha1
+kind: Application
+metadata:
+  name: whoami-dev
+spec:
+  destination:
+    namespace: stream-dev-whoami
+    server: https://kubernetes.default.svc
+  source:
+    path: ""
+    repoURL: https://github.com/gloppasglop/stream-whoami.git
+    targetRevision: HEAD
+  sources:
+    - path: "dev"
+      repoURL: https://github.com/gloppasglop/stream-whoami.git
+  project: stream
