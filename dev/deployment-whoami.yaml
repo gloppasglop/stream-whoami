@@ -4,4 +4,4 @@ kind: Deployment
 metadata:
   name: whoami
 spec:
-  replicas: 3
+  replicas: 1
